@@ -10,12 +10,7 @@ void nOmuni::RePosition(double position) {
     this->yPower = sin(position);
 }
 
-/*double nOmuni::OmuniPower(double radian, uint8_t power) {
-    double omuniPower = sin(radian - this->position) * power;
-    return omuniPower;
-}*/
-
 double nOmuni::OmuniPower(int x, int y) {
-    double omuniPower = this->xPower*x + this->yPower*y
+    double omuniPower = this->xPower*x + this->yPower*y;
     return omuniPower;
 }
