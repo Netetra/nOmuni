@@ -46,7 +46,6 @@ void loop() {
           Moters[i].stop();
         }
       }
-      Serial.print("\n");
     } else {
       for (uint8_t i = 0; i < N; i++) {
         Moters[i].stop();
